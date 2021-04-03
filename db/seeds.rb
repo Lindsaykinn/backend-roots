@@ -7,9 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Family.create([
-  {name: 'Marshall', id:1}
-  {name: 'Graham', id:2}
-  {name: 'Clanin', id:3}
-  {name: 'Kinn', id:4}
-  {name: 'Hare', id:5}
+  {name: 'Marshall', image: '', story: 'We like to farm', id:1},
+  {name: 'Graham', image: '', story: 'We also like to farm', id:2},  
+  {name: 'Kinn', image: '', story: 'We like to party', id:3},
+  {name: 'Hare', image: '', story: 'We also like to party', id:4}
 ])
