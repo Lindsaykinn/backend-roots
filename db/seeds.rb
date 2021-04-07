@@ -46,7 +46,7 @@
 #   # {name: 'Hare', image: '', story: 'We also like to party', id:4}
 # ])
 
-fam_1 = Family.create(name: "Lauren", image: '', story: "We like bingo", country_of_origin: "Merica")
+fam_1 = Family.create(surname: "Lauren", image: '', story: "We like bingo", country_of_origin: "Merica")
 
 Person.create([
     {name: "Sue", dob: DateTime.new(1990,12,12,0), family: fam_1}

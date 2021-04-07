@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_04_05_143547) do
 
   create_table "families", force: :cascade do |t|
-    t.string "name"
+    t.string "surname"
     t.string "image"
     t.text "story"
     t.string "country_of_origin"
