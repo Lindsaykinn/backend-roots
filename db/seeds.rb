@@ -48,6 +48,14 @@
 
 fam_1 = Family.create(surname: "Lauren", image: '', story: "We like bingo", country_of_origin: "Merica")
 
+fam_2 = Family.create(surname: "Kinn", image: '', story: "We like bingo", country_of_origin: "Belgium")
+
+fam_3 = Family.create(surname: "Graham", image: '', story: "We like bingo", country_of_origin: "Merica")
+
 Person.create([
     {name: "Sue", dob: DateTime.new(1990,12,12,0), family: fam_1}
+])
+
+Person.create([
+    {name: "Lindsay Kinn", dob: DateTime.new(1976,10,02,0), family: fam_2}
 ])
