@@ -3,7 +3,7 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   movies = Movie.create([{ name: 'Star Wars' }, { first_name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 # person1=Person.create(name: 'Ruth Imogene Graham Marshall', dob:DateTime.new(1906,9,23,0), family_id:2)
 # person2=Person.create(name: 'Lindsay Leigh Kinn', dob:DateTime.new(1976,10,02,0), family_id:3)
@@ -46,16 +46,16 @@
 #   # {name: 'Hare', image: '', story: 'We also like to party', id:4}
 # ])
 
-fam_1 = Family.create(surname: "Lauren", image: '', story: "We like bingo", country_of_origin: "Merica")
+fam_1 = Family.create(surname: "Lauren", story: "We like bingo", country_of_origin: "Merica")
 
-fam_2 = Family.create(surname: "Kinn", image: '', story: "We like bingo", country_of_origin: "Belgium")
+fam_2 = Family.create(surname: "Kinn", story: "We like bingo", country_of_origin: "Belgium")
 
-fam_3 = Family.create(surname: "Graham", image: '', story: "We like bingo", country_of_origin: "Merica")
+fam_3 = Family.create(surname: "Graham", story: "We like bingo", country_of_origin: "England")
 
 Person.create([
-    {name: "Sue", dob: DateTime.new(1990,12,12,0), family: fam_1}
+    {first_name: "Sue", dob: DateTime.new(1990,12,12,0), family: fam_1}
 ])
 
 Person.create([
-    {name: "Lindsay Kinn", dob: DateTime.new(1976,10,02,0), family: fam_2}
+    {first_name: "Lindsay Kinn", dob: DateTime.new(1976,10,02,0), family: fam_2}
 ])

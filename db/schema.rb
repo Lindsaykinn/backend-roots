@@ -14,7 +14,6 @@ ActiveRecord::Schema.define(version: 2021_04_05_143547) do
 
   create_table "families", force: :cascade do |t|
     t.string "surname"
-    t.string "image"
     t.text "story"
     t.string "country_of_origin"
     t.datetime "created_at", precision: 6, null: false
@@ -22,7 +21,7 @@ ActiveRecord::Schema.define(version: 2021_04_05_143547) do
   end
 
   create_table "people", force: :cascade do |t|
-    t.string "name"
+    t.string "first_name"
     t.datetime "dob"
     t.integer "family_id", null: false
     t.datetime "created_at", precision: 6, null: false
