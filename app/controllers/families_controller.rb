@@ -5,12 +5,12 @@ class FamiliesController < ApplicationController
   def index
     @families = Family.all
 
-    render json: @families, include: [:people]
+    render json: @families
   end
 
   # GET /families/1
   def show
-    render json: @family, include: [:people]
+    render json: @family
   end
 
   # POST /families
@@ -18,7 +18,7 @@ class FamiliesController < ApplicationController
     @family = Family.new(family_params)
 
     if @family.save
-      render json: @family, include: [:people], status: :created, location: @family
+      render json: @family, status: :created, location: @family
     else
       render json: @family.errors, status: :unprocessable_entity
     end
@@ -46,6 +46,6 @@ class FamiliesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def family_params
-      params.require(:family).permit(:surname, :story, :country_of_origin, people:[:first_name, :dob, :id])
+      params.require(:family).permit(:surname, :story, :country, :person, :dob)
     end
 end

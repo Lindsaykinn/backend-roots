@@ -46,16 +46,16 @@
 #   # {name: 'Hare', image: '', story: 'We also like to party', id:4}
 # ])
 
-fam_1 = Family.create(surname: "Lauren", story: "We like bingo", country_of_origin: "Merica")
+fam_1 = Family.create(surname: "Lauren", story: "We like bingo", country: "USA", person: "Susan", dob: DateTime.new(1990,12,12,0))
 
-fam_2 = Family.create(surname: "Kinn", story: "We like bingo", country_of_origin: "Belgium")
+fam_2 = Family.create(surname: "Kinn", story: "We like bingo", country: "Belgium", person: "Lindsay Kinn", dob: DateTime.new(1990,12,12,0))
 
-fam_3 = Family.create(surname: "Graham", story: "We like bingo", country_of_origin: "England")
+fam_3 = Family.create(surname: "Graham", story: "We like bingo", country: "England")
 
-Person.create([
-    {first_name: "Sue", dob: DateTime.new(1990,12,12,0), family: fam_1}
-])
+# Person.create([
+#     {first_name: "Sue", dob: DateTime.new(1990,12,12,0), family: fam_1}
+# ])
 
-Person.create([
-    {first_name: "Lindsay Kinn", dob: DateTime.new(1976,10,02,0), family: fam_2}
-])
+# Person.create([
+#     {first_name: "Lindsay Kinn", dob: DateTime.new(1976,10,02,0), family: fam_2}
+# ])
