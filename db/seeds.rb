@@ -46,11 +46,11 @@
 #   # {name: 'Hare', image: '', story: 'We also like to party', id:4}
 # ])
 
-fam_1 = Family.create(surname: "Lauren", story: "We like bingo", country: "USA", person: "Susan", dob: DateTime.new(1990,12,12,0))
+fam_1 = Family.create(surname: "Hare", story: "Family History: Irish (Ulster): Anglicized form of Gaelic Ó hÍr, meaning ‘long-lasting’. In Ireland this name is found in County Armagh; it has also long been established in Scotland. Irish: Anglicized form of Ó hAichir ‘descendant of Aichear’, a personal name derived from the epithet aichear ‘fierce’, ‘sharp’. In Ireland this name is more commonly Anglicized as O’Hehir. English: nickname for a swift runner (possibly a speedy messenger) or a timorous person, from Middle English hare ‘hare’. However, the surname Ayer and its variants was sometimes recorded as Hare. English: topographic name from an Old English hær ‘rock’, ‘heap of stones’, ‘tumulus’. French: according to Morlet, an occupational name for a huntsman, from a medieval French call used to urge on the hounds, or, in the form Haré, from the past participle of harer ‘to excite, stir up (hounds in pursuit of a quarry)’.", country: "Ireland", person: "Lindsay Kinn", dob: DateTime.new(1976,02,10,0))
 
-fam_2 = Family.create(surname: "Kinn", story: "We like bingo", country: "Belgium", person: "Lindsay Kinn", dob: DateTime.new(1990,12,12,0))
+fam_2 = Family.create(surname: "Kinn", story: "German: nickname for someone with a prominent chin, from Middle High German kinne ‘chin’, or from an Old High German personal name formed with the element kuoni ‘bold’ or chunni ‘race’, ‘people’. Compare Konrad. ", country: "Belgium", person: "Gene Kinn", dob: DateTime.new(1937,02,10,0))
 
-fam_3 = Family.create(surname: "Graham", story: "We like bingo", country: "England")
+fam_3 = Family.create(surname: "Graham", story: "Family History: Graham is both an English and Scottish surname. It is a habitational name, derived from Grantham in Lincolnshire, England. The Scottish Grahams traditionally claimed descent from a chief called Grame, but the first authentic bearer of the name was William of Graham (a Norman) in the twelfth century.", country: "Scotland", person: "Joni Wilson", dob: DateTime.new(1954,04,04,0))
 
 # Person.create([
 #     {first_name: "Sue", dob: DateTime.new(1990,12,12,0), family: fam_1}
