@@ -59,3 +59,18 @@ fam_3 = Family.create(surname: "Graham", story: "Family History: Graham is both 
 # Person.create([
 #     {first_name: "Lindsay Kinn", dob: DateTime.new(1976,10,02,0), family: fam_2}
 # ])
+
+Person.create([
+  {
+    :name => "Lindsay Kinn",
+    :family_id => fam_2.id
+  },
+  {
+    :name => "Jamie Hare",
+    :family_id => fam_1.id
+  },
+  {
+    :name => "Ruth Graham",
+    :family_id => fam_3.id
+  }
+])
