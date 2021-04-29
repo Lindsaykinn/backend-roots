@@ -5,7 +5,7 @@ class FamiliesController < ApplicationController
   def index
     @families = Family.all
 
-    render json: @families
+    render json: @families, include: [:people]
   end
 
   # GET /families/1
